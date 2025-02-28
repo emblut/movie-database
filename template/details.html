@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get in-depth information on your favorite movies, TV shows, and celebrities. Find ratings, descriptions and more.">
+    <link rel="icon" href="./res/icons/favicon.png">
+    <title></title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/f300007e95.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <script type="module" src="./scripts/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <header class="header">
+        <div class="content-wrapper header__flex">
+          <a href="index.html"><img class="header__logo" src="./res/logo.png" alt="Logotype"/></a>
+        </div>
+      </header>
+      
+    <!-- Media details section -->
+    <section>
+      <div class="content-wrapper main">
+        <section class="media-information" id="movieInformation">
+          <article class="media">
+            <div class="media__top-container">
+              <div class="media__top-text-container">
+                <h1 class="media__title" id="heading"></h1>
+                <p class="media__original-title" id="firstTextInfo"></p>
+              </div>
+              <div class="media__fav-star-wrapper" id="infoStarIconWrapper">
+              </div>
+            </div>
+            <div class="main-visual">
+              <div class="main-visual__media-container">
+                <div class="main-visual__image-wrapper">
+                  <img class="main-visual__poster" id="mainPoster">
+                </div>
+                <div class="main-visual__video-wrapper">
+                  <div class="main-visual__video-container" id="mainVideoOrImg">
+                  </div>
+                </div>
+              </div>
+               <div class="main-visual__links ">
+                <a class="media-link" id="imgsLink">PHOTOS</a>
+                <a class="media-link" id="vidsLink">VIDEOS</a>
+               </div>
+            </div>
+            <div class="main-visual__small-links">
+              <a class="media-link media-link--small" id="imgsLink">PHOTOS</a>
+              <a class="media-link media-link--small" id="vidsLink">VIDEOS</a>
+             </div>
+            <div class="genre-section" id="genreSection">
+            </div>
+            <div class="overview-section">
+              <div class="overview-section__poster-wrapper">
+                <img class="overview-section__poster" id="smallPoster">
+              </div>
+              <div class="overview-section__overview-wrapper">
+                <p class="overview" id="description"></p>
+              </div>
+            </div>
+            <section class="rating" id="rating">
+            </section>
+            <div class="media__bonus-info-section" id="bonusInfoWrapper">
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>

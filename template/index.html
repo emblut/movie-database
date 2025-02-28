@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover and explore movies, TV shows, and celebrities with detailed ratings, trailers, and reviews. Search for your favorite content and stay up-to-date with the latest entertainment."
+    />
+    <link rel="icon" href="./res/icons/favicon.png" />
+    <title>My Movie Database</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/f300007e95.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <script type="module" src="./scripts/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="content-wrapper header__flex">
+        <a href="index.html"
+          ><img class="header__logo" src="./res/logo.png" alt="logotype"
+        /></a>
+        <form class="header__form" id="searchForm">
+          <select
+            class="header__media-select"
+            name="mediaType"
+            id="typeDropDown"
+            aria-label="Choose what media/medias to search for"
+          >
+            <option value="multi">All</option>
+            <option value="movie">Movies</option>
+            <option value="tv">Tv series</option>
+            <option value="person">People</option>
+          </select>
+          <input
+            class="header__input"
+            id="searchInput"
+            type="text"
+            aria-label="Search"
+          />
+          <button class="header__form-btn" id="searchBtn">Search</button>
+        </form>
+        <a href="./favorites.html" class="header__fav-btn" id="favBtn"
+          >Favorites</a
+        >
+      </div>
+    </header>
+
+    <!-- Trailer Caroussel -->
+    <section>
+      <div class="content-wrapper">
+        <section class="trailers">
+          <img
+            src="./res/icons/arrow-left.svg"
+            alt="left navigation arrow"
+            class="trailers__arrow trailers__arrow--left"
+            data-direction="left"
+          />
+          <img
+            src="./res/icons/arrow-right.svg"
+            alt="right navigation arrow"
+            class="trailers__arrow trailers__arrow--right"
+            data-direction="right"
+          />
+          <section class="trailers__container"></section>
+        </section>
+      </div>
+    </section>
+
+    <!-- Our recommended movies section -->
+    <section class="popular-section">
+      <div class="content-wrapper main">
+        <h1 class="popular-section__title" id="cardsTitle"></h1>
+        <section class="card-container" id="cardContainer"></section>
+      </div>
+    </section>
+  </body>
+</html>
++

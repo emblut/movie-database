@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the search results for movies, TV shows, and celebrities. Get a quick overview in a convenient card format, and click for more detailed information on each item."
+    />
+    <link rel="icon" href="./res/icons/favicon.png" />
+    <title>Search - My Movie Database</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/f300007e95.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <script type="module" src="./scripts/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="content-wrapper header__flex">
+        <a href="index.html"
+          ><img class="header__logo" src="./res/logo.png" alt="logotype"
+        /></a>
+      </div>
+    </header>
+
+    <!-- Search media section -->
+    <section class="search-section">
+      <div class="content-wrapper main">
+        <h1 class="search-title" id="cardsTitle"></h1>
+        <section class="card-container" id="cardContainer"></section>
+      </div>
+    </section>
+  </body>
+</html>
