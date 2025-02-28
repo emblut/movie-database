@@ -7,7 +7,6 @@ function setStarSrc(data, imgRef) {
 }
 
 function checkIfFavorite(favorites, data) {
-  console.log(favorites);
   return favorites.find((favorite) => {
     return favorite.id === data.id;
   });

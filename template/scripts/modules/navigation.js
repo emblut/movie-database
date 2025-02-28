@@ -16,7 +16,6 @@ function redirectToFavorite() {
 }
 
 function redirectTodetails(baseData) {
-  console.log(baseData);
   navigateTo(
     `http://127.0.0.1:5502/template/details.html?type=${baseData.mediaType}&id=${baseData.id}`
   );
