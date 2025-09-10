@@ -1,4 +1,4 @@
-export const apiKey = "6356931190862b2d778ee08ef2534eb8";
+export const apiKey = "";
 
 import { setupHomePage } from "./modules/pages/home/homePage.js";
 import { setupSearchPage } from "./modules/pages/searchResults/searchResultsPage.js";
